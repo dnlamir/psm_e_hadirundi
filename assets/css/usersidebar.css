@@ -1,0 +1,177 @@
+.sidebar {
+    background: #1a2a3a;
+    color: white;
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    z-index: 100;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar-header {
+    padding: 25px;
+    border-bottom: 1px solid #2c3e50;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #1a2a3a, #2c3e50);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #3498db, #74b9ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.logo-text a:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #74b9ff, #3498db);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.logo-icon {
+    font-size: 28px;
+    background: linear-gradient(135deg, #3498db, #2c82c9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-section {
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7f8c8d;
+    margin: 0 0 10px 10px;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-item {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+    background: #2c3e50;
+    transform: translateX(3px);
+}
+
+.nav-item.active {
+    background: linear-gradient(135deg, #3498db, #2c82c9);
+    font-weight: 600;
+}
+
+.nav-icon {
+    font-size: 20px;
+    width: 24px;
+    text-align: center;
+}
+
+/* Sub-menu styling */
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #34495e;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 10px 0;
+}
+
+.submenu-item {
+    padding: 8px 20px;
+    text-decoration: none;
+    display: block;
+    color: #ecf0f1;
+}
+
+.submenu-item:hover {
+    background-color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        top: auto;
+        flex-direction: row;
+        padding: 10px 0;
+    }
+    
+    .sidebar-header {
+        display: none;
+    }
+    
+    .nav-section {
+        padding: 0 5px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    .section-title {
+        display: none;
+    }
+    
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0;
+    }
+    
+    .nav-item {
+        flex-direction: column;
+        padding: 8px 5px;
+        font-size: 12px;
+        gap: 5px;
+    }
+    
+    .nav-icon {
+        font-size: 18px;
+    }
+}

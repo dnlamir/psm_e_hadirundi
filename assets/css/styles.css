@@ -1,0 +1,226 @@
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-image: url('../img/login.jpg');  /* Fix the path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Change min-height to height */
+    overflow: hidden;  /* Prevent scrolling */
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* Change min-height to height */
+    padding: 20px;  /* Reduce padding */
+    margin-bottom: 0;  /* Remove bottom margin */
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 20px auto;
+    position: relative; /* Tambah ini */
+    z-index: 1; /* Tambah ini untuk pastikan box berada di atas */
+}
+
+.input-group {
+    margin-bottom: 25px;
+    padding: 0 10px; /* Tambah ini untuk spacing yang lebih baik */
+}
+
+/* Buang class .logo yang kedua dan gabungkan style-nya seperti ini */
+.logo {
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #1a75ff, #00ccff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    position: relative;
+    text-transform: uppercase; /* Tambah ini untuk nampak lebih kemas */
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(45deg, #1a75ff, #00ccff);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.input-group {
+    margin-bottom: 25px; /* Tambah ruang antara input */
+}
+
+.login-box input {
+    margin-top: 8px;
+    padding: 14px 16px;
+}
+
+button {
+    margin-top: 30px; /* Tambah ruang sebelum button */
+    margin-bottom: 20px; /* Tambah ruang selepas button */
+}
+
+.login-box:hover {
+    transform: translateY(-5px);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 8px;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login-box input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #0056b3;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0056b3;
+}
+
+.content-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.policy-content, .terms-content {
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+
+.policy-content h2, .terms-content h2 {
+    margin-top: 1.5rem;
+    color: #333;
+}
+
+.policy-content ul, .terms-content ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    margin: 2rem 0;
+}
+
+.contact-form .input-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    color: #333;
+}

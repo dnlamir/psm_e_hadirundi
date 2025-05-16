@@ -1,0 +1,4 @@
+[29-Mar-2025 02:49:49 Asia/Kuala_Lumpur] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\project\manage_voters.php on line 259
+[29-Mar-2025 02:49:49 Asia/Kuala_Lumpur] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\project\manage_voters.php on line 260
+[29-Mar-2025 02:49:49 Asia/Kuala_Lumpur] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\project\manage_voters.php on line 261
+[29-Mar-2025 02:49:49 Asia/Kuala_Lumpur] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\project\manage_voters.php on line 262

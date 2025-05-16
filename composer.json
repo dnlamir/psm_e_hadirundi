@@ -1,0 +1,20 @@
+{
+    "name": "dnlamir/project",
+    "description": "A voter attendance tracking system",
+    "autoload": {
+        "psr-4": {
+            "Dnlamir\\Project\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Daniel Amir Bin Md Zaihan",
+            "email": "danielamir171202@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^4.1",
+        "twilio/sdk": "^8.5",
+        "tecnickcom/tcpdf": "^6.9"
+    }
+}
